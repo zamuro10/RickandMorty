@@ -1,0 +1,121 @@
+/* Card.module.css */
+
+.card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d; /* Agregado */
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.cardShadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.cardBack,
+.cardFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999999;
+  transition: color 0.3s;
+}
+
+.closeButton:hover {
+  color: #ff0000;
+}
+
+.name {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status,
+.species,
+.gender,
+.origin {
+  font-size: 25px;
+  color: #131111;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardFront {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.favoriteButton {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.cardFront img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card.clicked .cardInner {
+  transform: rotateY(180deg);
+}
+
+.card.clicked {
+  transform: scale(1.05);
+}

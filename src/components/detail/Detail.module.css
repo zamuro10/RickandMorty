@@ -1,0 +1,53 @@
+/* Detail.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5f7;
+opacity: 0.9;
+background-image: radial-gradient(circle at center center, #1f2044, #e5e5f7), repeating-radial-gradient(circle at center center, #1f2044, #1f2044, 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+}
+  
+  .content {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .name {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .status,
+  .species,
+  .gender,
+  .origin {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .content_img {
+    margin-left: 80px;
+  }
+  
+  .characterImage {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: rotate 10s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

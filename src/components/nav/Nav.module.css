@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .nav button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 50px; /* Ajusta el padding según tu preferencia */
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px; /* Ajusta el tamaño de fuente según tu preferencia */
+  }
+  
+  .nav button:hover {
+    background-color: #555;
+  }
+  
+  .nav .randomButton {
+    background-color: #3f51b5;
+  }
+  
+  .nav .logoutButton {
+    background-color: #f44336;
+  }
+  
+  .nav .randomButton span {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  /* Resto de estilos... */
+  
